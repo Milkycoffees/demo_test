@@ -53,7 +53,7 @@
   </view>
   <view class='box_height_15'></view>
   <view class='forget box_padding'>
-    <navigator url='../login/forget/forget' class='forget_web'>忘记绑定码</navigator>
+    <navigator url='../login/forget/forget' class='forget_web' style='width:80px'>忘记绑定码</navigator>
   </view>
   <!-- 老师 -->
   <view class="mid_content_tc  {{showView?'nosee':'see'}}">
