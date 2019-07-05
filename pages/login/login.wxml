@@ -1,0 +1,69 @@
+<view class='mian box_padding'>
+  <!-- 头部选择 -->
+  <view class='top_nav rbox box_y_center'>
+    <view data-text='家长绑定' class="pr rbox box_y_center box_x_center {{showView ?'choose_nav_change':''}}" bindtap='show_that'>家长绑定</view>
+    <view>|</view>
+    <view data-text='老师绑定' class="tc rbox box_y_center box_x_center {{showView ?'':'choose_nav_change'}} " bindtap='show_that'>老师绑定</view>
+  </view>
+  <view class='box_height_20'></view>
+  <view class="mid_content_pr box_padding {{showView?'see':'nosee'}}">
+    <!-- 输入学生姓名 -->
+    <view class='login_input rbox box_y_center'>
+      <view class='char_icon rbox box_y_center box_x_center'>
+        <icon class='iconfont icon-renshu' style='font-size:20px'></icon>
+      </view>
+      <input type='text' placeholder='请输入学生姓名'></input>
+    </view>
+    <view class='box_height_15'></view>
+    <!-- 家长姓名 -->
+    <view class='login_input rbox box_y_center'>
+      <view class='char_icon rbox box_y_center box_x_center'>
+        <icon class='iconfont icon-renshu' style='font-size:20px'></icon>
+      </view>
+      <input type='text' placeholder='请输入家长姓名'></input>
+    </view>
+    <view class='box_height_15'></view>
+    <!-- 绑定码 -->
+    <view class='login_input rbox box_y_center'>
+      <view class='char_icon rbox box_y_center box_x_center'>
+        <icon class='iconfont icon-renshu' style='font-size:20px'></icon>
+      </view>
+      <input type='text' placeholder='请输入绑定码'></input>
+    </view>
+    <view class='box_height_15'></view>
+    <!-- 选择关系 -->
+    <view class='login_input rbox box_y_center'>
+      <view class='char_icon rbox box_y_center box_x_center'>
+        <icon class='iconfont icon-renshu' style='font-size:20px'></icon>
+      </view>
+      <picker mode="selector" bindchange='choose_who' value="{{index}}" range="{{array}}">
+        <view class="picker">
+          <text>选择关系：</text>{{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class='box_height_15'></view>
+    <!-- 手机号码 -->
+    <view class='login_input rbox box_y_center'>
+      <view class='char_icon rbox box_y_center box_x_center'>
+        <icon class='iconfont icon-renshu' style='font-size:20px'></icon>
+      </view>
+      <input type='text' placeholder='请输入手机号码'></input>
+    </view>
+  </view>
+  <view class='box_height_15'></view>
+  <view class='forget box_padding'>
+    <navigator url='../login/forget/forget' class='forget_web'>忘记绑定码</navigator>
+  </view>
+  <!-- 老师 -->
+  <view class="mid_content_tc  {{showView?'nosee':'see'}}">
+    123123
+  </view>
+
+  <view class='box_height_25'></view>
+  <view class='true_btn'>
+    <view class='df_1'>
+      <button>绑定</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+@import "../../lib/style/flex.wxss";
+@import "../../lib/icon/iconfont.wxss";
+
+.see
+{
+  display: block;
+}
+
+.nosee
+{
+  display: none;
+}
+
+.top_nav
+{
+  height: 60px;
+}
+
+.pr, .tc
+{
+  width: 50%;
+  height: 58px;
+}
+
+.choose_nav_change
+{
+  color: #2D9EE4;
+  border-bottom: 2px solid #2D9EE4;
+}
+
+.char_icon
+{
+  width: 40px;
+  height: 40px
+}
+
+.char_icon icon
+{
+  margin-top: -3px;
+}
+
+.login_input
+{
+  height: 20%;
+  border: 1px solid gainsboro;
+  border-radius: 5px
+}
+
+.login_input input
+{
+  width: 80%;
+}
+
+.forget_web
+{
+  color: #2D9EE4;
+}
+
+.true_btn .df_1 button
+{
+  background: #2D9EE4;
+  color: #fff;
+  border: none;
+}
