@@ -38,7 +38,7 @@
       </view>
       <picker mode="selector" bindchange='choose_who' value="{{index}}" range="{{array}}">
         <view class="picker">
-          <text>选择关系：</text>{{array[index]}}
+          <text wx:if="{{choose_flag}}">选择关系：</text>{{array[index]}}
         </view>
       </picker>
     </view>

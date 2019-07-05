@@ -6,17 +6,21 @@ Page({
    */
   data: {
     array: ['爸爸', '妈妈'],
-    showView: true
+    showView: true,
+    choose_flag:true
   },
 
   choose_who: function(e) {
     console.log(e.detail.value);
-    this.setData({
-      index: e.detail.value
+    var that = this;
+    that.setData({
+      index: e.detail.value,
+      choose_flag: that.choose_flag = false
     })
   },
 
   show_that: function(e) {
+    console.log(e)
     var that = this;
     console.log(e.currentTarget.dataset.text)
     if(e.currentTarget.dataset.text === '家长绑定'){
